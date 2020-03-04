@@ -11,13 +11,16 @@ import { DashboardComponent } from "./dashboard";
 import { LoginComponent } from "./login";
 import { RegisterComponent } from "./register";
 import { AlertComponent } from "./_components";
+import { MatGridListModule } from "@angular/material/";
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     HttpClientModule,
-    appRoutingModule
+    appRoutingModule,
+    //from angular materials
+    MatGridListModule
   ],
   declarations: [
     AppComponent,

@@ -1,3 +1,16 @@
 <h1>Hi {{ currentUser.firstName }}!</h1>
 <h3>Welcome to the dashboard</h3>
 <h4>Use this portal to view and redeem your points from our catalog!</h4>
+<h2>Driver Features:</h2>
+
+<mat-grid-list cols="4" rowHeight="100px">
+  <mat-grid-tile
+    *ngFor="let tile of tiles"
+    [colspan]="tile.cols"
+    [rowspan]="tile.rows"
+    [style.background]="tile.color"
+  >
+    {{ tile.text }}
+  </mat-grid-tile>
+</mat-grid-list>
+<br />
